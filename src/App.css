@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  gap: 24px;
+}
+
+.loadingScreen,
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, rgba(79, 111, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, #090a12 0%, #0f1220 100%);
+  color: #eef2ff;
+}
+
+.authCard {
+  width: min(440px, 100%);
+  padding: 36px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.3);
+}
+
+.authCard h1 {
+  margin: 0 0 12px;
+  font-size: 1.8rem;
+}
+
+.authCard p {
+  margin: 0 24px 24px 0;
+  color: #c5cbe9;
+}
+
+.authForm {
+  display: grid;
+  gap: 18px;
+}
+
+.authForm label {
+  display: grid;
+  gap: 10px;
+  color: #dbe0ff;
+  font-weight: 600;
+}
+
+.authForm input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f3f5ff;
+}
+
+.authButton,
+.authToggle,
+.logoutButton,
+.themeToggle {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-weight: 700;
+}
+
+.authButton {
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(135deg, #4f6fff, #2dd4bf);
+}
+
+.authToggle {
+  width: 100%;
+  margin-top: 6px;
+  background: transparent;
+  color: #9aa5c8;
+  cursor: pointer;
+}
+
+.authError {
+  margin: 0;
+  color: #ff8b9b;
+}
+
+.themeToggle {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f3f5ff;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,90 @@
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 420px;
+  overflow-y: auto;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.placeholderMessage {
+  max-width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  color: #c4d0e0;
+}
+
+.chatMessage {
+  width: fit-content;
+  max-width: 72%;
+  padding: 18px;
+  border-radius: 24px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.chatMessage.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #4f6fff, #2dd4bf);
+  color: #ffffff;
+  box-shadow: 0 18px 40px rgba(79, 111, 255, 0.18);
+  border-bottom-right-radius: 6px;
+}
+
+.chatMessage.assistant {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e8eef7;
+  border-bottom-left-radius: 6px;
+}
+
+.messageMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.messageIcon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f6f7ff;
+}
+
+.chatMessage.assistant .messageIcon {
+  background: rgba(79, 111, 255, 0.12);
+  color: #7a91f2;
+}
+
+.messageRole {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.messageTime {
+  font-size: 0.78rem;
+  color: #adb8d4;
+}
+
+.chatMessage p {
+  margin: 0;
+  white-space: pre-wrap;
+}
