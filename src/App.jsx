@@ -5,7 +5,7 @@ import Sidebar from './Sidebar.jsx'
 import Auth from './Auth.jsx'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://ec2-3-104-37-144.ap-southeast-2.compute.amazonaws.com/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://ec2-3-104-37-144.ap-southeast-2.compute.amazonaws.com:3000/api'
 
 function App() {
   const [threads, setThreads] = useState([])
